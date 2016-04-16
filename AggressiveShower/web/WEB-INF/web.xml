@@ -24,13 +24,13 @@
     <security-constraint>
         <display-name>User constraint</display-name>
         <web-resource-collection>
-            <web-resource-name>users</web-resource-name>
+            <web-resource-name>Users</web-resource-name>
             <description/>
             <url-pattern>/faces/USERS/*</url-pattern>
         </web-resource-collection>
         <auth-constraint>
             <description>Users only</description>
-            <role-name>user</role-name>
+            <role-name>User</role-name>
         </auth-constraint>
     </security-constraint>
     <security-constraint>
@@ -42,7 +42,7 @@
         </web-resource-collection>
         <auth-constraint>
             <description>Admin only</description>
-            <role-name>admin</role-name>
+            <role-name>Admin</role-name>
         </auth-constraint>
     </security-constraint>
     <login-config>
@@ -55,10 +55,10 @@
     </login-config>
     <security-role>
         <description>user</description>
-        <role-name>user</role-name>
+        <role-name>User</role-name>
     </security-role>
     <security-role>
-        <description>Admin</description>
-        <role-name>admin</role-name>
+        <description>admin</description>
+        <role-name>Admin</role-name>
     </security-role>
 </web-app>
